@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-zinc-50;
+  }
+
+  body::after {
+    content: "";
+    background-image: url(/noise.png);
+    position: fixed;
+    inset: 0;
+    opacity: 0.15;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    pointer-events: none;
+  }
+}
